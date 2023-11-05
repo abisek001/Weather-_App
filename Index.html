@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="Icon" href="./images/Icon.jpg">
+</head>
+
+<body>
+    <!--Search box-->
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false" id="myInput">
+            <button id="mybtn" onclick="checkweather(searchBox.value)">
+                <img src="./images/search.png" alt="search">
+            </button>
+        </div>
+        <div class="error">
+            <p id="error-msg">error</p>
+        </div>
+
+        <!--Weather -->
+        <div class="weather">
+            
+            <div class="cty-name">
+                <h2>
+                    Weather in
+                </h2>
+                <h2 class="city"> </h2>
+            </div>
+            <h1 class="temp">0°C</h1>
+            <div class="icon-detail">
+                <img src="./images/rain.png" alt="Rain" class="weather-icon">
+                <p class="description"></p>
+            </div>
+           
+
+            <div class="details">
+                <div class="col">
+                    <img src="./images/humidity.png" alt="Humidity">
+                    <p>Humidity: </p>
+                    <p class="humidity"> 0%</p>
+                </div>
+                <div class="col">
+                    <img src="./images/wind.png" alt="wind">
+                    <p>Wind Speed: </p>
+                    <p class="wind"> 0 km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./intex.js"></script>
+</body>
+
+</html>
